@@ -1,0 +1,16 @@
+<h1 Change-color>This is Home Page{{namService.userName}}</h1>
+<p Change-color>This is directive</p>
+<button (click)="GotoPageFnc()">Go to User Page</button>
+<br><br>
+
+<form>
+    <h2>Selected News: {{ selectedNews }}</h2>
+<input placeholder="comment" [(ngModel)]="commentVar" name="commentVav" #commentVav="ngModel"><br><br>
+<button (click)="addComment(commentVav)">Add Comment</button><br>
+<button (click)="namService.loginFnc()">Login</button>
+<news-page title="Education" detail="Angular is taught in school" [commVar]="commentArr['Education']" (SelectMe)="SelectMeFnc($event)"></news-page>
+<news-page title="Sports" detail="Virat Kohluuu is celebrating his birthday in the month of November" [commVar]="commentArr['Sports']" (SelectMe)="SelectMeFnc($event)"></news-page>
+<news-page title="Politics" detail="Government buses are free" [commVar]="commentArr['Politics']" (SelectMe)="SelectMeFnc($event)"></news-page>
+</form>
+
+

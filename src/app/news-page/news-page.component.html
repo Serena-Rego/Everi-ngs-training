@@ -1,0 +1,11 @@
+<h1>This is New{{namService.userName}}</h1>
+<div class="divCls">
+	<h4>Title : {{titleVar}}</h4>
+	<p>Details : {{detailVar}}</p>
+	<ul>
+		<li *ngFor="let commVar of commentArr">
+			{{commVar}}
+		</li>
+	</ul>
+	<button (click)="SelectMeFnc()">Select</button>
+</div>

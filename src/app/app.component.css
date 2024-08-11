@@ -1,0 +1,33 @@
+.drop-list {
+    border: 1px solid #ccc;
+    min-height: 200px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    background: #f9f9f9;
+  }
+  
+  .draggable-item {
+    padding: 8px;
+    margin: 4px;
+    background: #e1e1e1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: move;
+  }
+
+  .greenThemeCls{
+    background-color: cyan;
+  }
+
+  .purpleThemeCls{
+    background-color: plum
+  }
+
+  .ErrMsgCls{
+    font-size: 12px;
+    color: red;
+  }
+  
